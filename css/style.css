@@ -1,0 +1,156 @@
+@import url("reset.css");
+
+body {
+    background-color: #000;
+    font: 1em Courier, Arial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-weight: bolder;
+    text-decoration: underline;
+    padding: 8px;
+}
+
+.pfp {
+    background-color: #001eff;
+    width: 250px;
+    height: 250px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    border-color: #d600ff;
+    border-style: double;
+}
+
+.pfp img {
+    border-radius: 50%;
+    width: 80%;
+    border-color: #d600ff;
+    border-style: double;
+    border-width: 4px;
+  }
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #001eff;
+    border-radius: 16px;
+    border-color: #d600ff;
+    border-style: double;
+    height: 450px;
+    width: 350px;
+}
+
+.contact {
+    width: 300px;
+    height: 150px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00ff9f;
+    border-color: #d600ff;
+    border-style: double;
+}
+
+.company {
+    width: 300px;
+    height: 150px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00ff9f;
+    border-color: #d600ff;
+    border-style: double;
+}
+
+@media (min-width: 500px) {
+    .details {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 150px;
+        width: 1000px;
+        margin-top: 20px;
+    }
+
+    .contact {
+        width: 300px;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .company {
+        width: 300px;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+}
+
+@media (min-width: 768px) {
+    .main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 450px;
+        width: 350px;
+        margin-left: 50px;
+    }
+
+    .contact {
+        width: 300px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .company {
+        width: 300px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pfp {
+        height: 450px;
+        width: 350px;
+        display: flex;
+        margin-top: 38px;
+        margin-right: 100px;
+    }
+}
